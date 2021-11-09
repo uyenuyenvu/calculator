@@ -102,127 +102,127 @@
       </el-col>
     </el-row>
   </div>
-<!--  <div class="cal3 cal">-->
-<!--    <p class="label">Máy tính</p>-->
-<!--    <p>1/ Chọn loại công việc</p>-->
-<!--    <el-radio v-model="typeJob" value="1" label="1">Joint sealing</el-radio>-->
-<!--    <br>-->
-<!--    <el-radio v-model="typeJob" value="2" label="2">Device SMDS</el-radio>-->
-<!--    <br>-->
-<!--    <el-radio v-model="typeJob" value="3" label="3">Protection and restoration of the coating</el-radio>-->
-<!--    <p>2/ Thiết lập bộ lọc</p>-->
-<!--  <p>Chọn loại chất</p>-->
-<!--    <el-input value="Xi măng nhựa đường"></el-input>-->
-<!--  <p>Chọn vật liệu để xử lý bề mặt</p>-->
-<!--    <el-input value="DVC R(V)"></el-input>-->
-<!--    <el-row :gutter="0">-->
-<!--      <el-col :sm="12">-->
-<!--        <el-radio v-model="typeJob2" value="1" label="1">Tiêu thụ trung bình</el-radio>-->
-<!--      </el-col>-->
-<!--      <el-col :sm="12">-->
-<!--        <el-radio v-model="typeJob2" value="2" label="2">Thay đổi thủ công</el-radio>-->
-<!--      </el-col>-->
-<!--      <el-col :sm="24" style="margin-top: 10px">-->
-<!--        <el-input :value="1.3"></el-input>-->
-<!--      </el-col>-->
-<!--    </el-row>-->
-<!--    <p>3/ Nhập dữ liệu diện tích bề mặt được xử lý <br>(m<sup>2</sup>)</p>-->
-<!--    <el-input value=""></el-input>-->
+  <div class="cal3 cal">
+    <p class="label">Máy tính</p>
+    <p>1/ Chọn loại công việc</p>
+    <el-radio v-model="typeJob" value="1" label="1">Joint sealing</el-radio>
+    <br>
+    <el-radio v-model="typeJob" value="2" label="2">Device SMDS</el-radio>
+    <br>
+    <el-radio v-model="typeJob" value="3" label="3">Protection and restoration of the coating</el-radio>
+    <p>2/ Thiết lập bộ lọc</p>
+  <p>Chọn loại chất</p>
+    <el-input value="Xi măng nhựa đường"></el-input>
+  <p>Chọn vật liệu để xử lý bề mặt</p>
+    <el-input value="DVC R(V)"></el-input>
+    <el-row :gutter="0">
+      <el-col :sm="12">
+        <el-radio v-model="typeJob2" value="1" label="1">Tiêu thụ trung bình</el-radio>
+      </el-col>
+      <el-col :sm="12">
+        <el-radio v-model="typeJob2" value="2" label="2">Thay đổi thủ công</el-radio>
+      </el-col>
+      <el-col :sm="24" style="margin-top: 10px">
+        <el-input :value="1.3"></el-input>
+      </el-col>
+    </el-row>
+    <p>3/ Nhập dữ liệu diện tích bề mặt được xử lý <br>(m<sup>2</sup>)</p>
+    <el-input value=""></el-input>
 
-<!--    <el-row :gutter="0" style="margin-top: 20px; text-align: center">-->
-<!--      <el-col :sm="24">-->
-<!--        <el-button type="info" plain>Tính</el-button>-->
-<!--      </el-col>-->
-<!--    </el-row>-->
-<!--  </div>-->
-<!--  <div class="cal4 cal">-->
-<!--    <p class="label">Máy tính</p>-->
-<!--    <p>1/ Chọn loại công việc</p>-->
-<!--    <el-radio v-model="typeJob" value="1" label="1">Joint sealing</el-radio>-->
-<!--    <br>-->
-<!--    <el-radio v-model="typeJob" value="2" label="2">Device SMDS</el-radio>-->
-<!--    <br>-->
-<!--    <el-radio v-model="typeJob" value="3" label="3">Protection and restoration of the coating</el-radio>-->
-<!--    <p>2/ Thiết lập bộ lọc</p>-->
-<!--  <p>Chọn loại chất</p>-->
-<!--    <el-input value="Bê tông xi măng"></el-input>-->
-<!--  <p>Chọn vật liệu để xử lý bề mặt</p>-->
-<!--    <el-input value="Thấm nước"></el-input>-->
-<!--    <el-row :gutter="0">-->
-<!--      <el-col :sm="12">-->
-<!--        <el-radio v-model="typeJob2" value="1" label="1">Tiêu thụ trung bình</el-radio>-->
-<!--      </el-col>-->
-<!--      <el-col :sm="12">-->
-<!--        <el-radio v-model="typeJob2" value="2" label="2">Thay đổi thủ công</el-radio>-->
-<!--      </el-col>-->
-<!--      <el-col :sm="24" style="margin-top: 10px">-->
-<!--        <el-input :value="0.2"></el-input>-->
-<!--      </el-col>-->
-<!--    </el-row>-->
-<!--    <p>3/ Nhập dữ liệu diện tích bề mặt được xử lý <br> (m<sup>2</sup>)</p>-->
-<!--    <el-input value=""></el-input>-->
-<!--    <el-row :gutter="0" style="margin-top: 20px; text-align: center">-->
-<!--      <el-col :sm="24">-->
-<!--        <el-button type="info" plain>Tính</el-button>-->
-<!--      </el-col>-->
-<!--    </el-row>-->
-<!--  </div>-->
-<!--  <div class="cal5 cal">-->
-<!--    <p class="label">Máy tính</p>-->
-<!--    <p>Kết quả tính toán</p>-->
-<!--    <p>Vùng khí hậu đường bộ</p>-->
-<!--    <el-input v-model="localSelected"></el-input>-->
-<!--    <p>Chọn một chất bịt kín</p>-->
-<!--    <el-input :value="getMaterial()"></el-input>-->
-<!--    <div class="table">-->
-<!--      <table cellspacing="0">-->
-<!--        <tr>-->
-<!--          <td></td>-->
-<!--          <td>Đường 1</td>-->
-<!--          <td>Đường 2</td>-->
-<!--          <td>Tổng</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>Khối lượng đá nghiền, 10-20, kg</td>-->
-<!--          <td>0.4</td>-->
-<!--          <td>0.4</td>-->
-<!--          <td>1</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>Khối lượng đá nghiền, 5-10, kg</td>-->
-<!--          <td>36</td>-->
-<!--          <td>36</td>-->
-<!--          <td>72</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>Khối lượng đá nghiền, 3-5, kg</td>-->
-<!--          <td>0.6</td>-->
-<!--          <td>0.6</td>-->
-<!--          <td>2</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>Khối lượng của sơn lót, kg </td>-->
-<!--          <td>0.02</td>-->
-<!--          <td>0.02</td>-->
-<!--          <td>1</td>-->
-<!--        </tr>-->
-<!--        <tr>-->
-<!--          <td>Khối lượng mastic, kg</td>-->
-<!--          <td>0.53</td>-->
-<!--          <td>0.53</td>-->
-<!--          <td>2</td>-->
-<!--        </tr>-->
-<!--      </table>-->
-<!--    </div>-->
-<!--    <el-row :gutter="0" style="padding-top: 20px">-->
-<!--      <el-col :sm="12" style="text-align: center;">-->
-<!--        <el-button type="primary" plain>Thay đổi</el-button>-->
-<!--      </el-col>-->
-<!--      <el-col :sm="12" style="text-align: center">-->
-<!--        <el-button type="primary" plain >Tính toán</el-button>-->
-<!--      </el-col>-->
-<!--    </el-row>-->
-<!--  </div>-->
+    <el-row :gutter="0" style="margin-top: 20px; text-align: center">
+      <el-col :sm="24">
+        <el-button type="info" plain>Tính</el-button>
+      </el-col>
+    </el-row>
+  </div>
+  <div class="cal4 cal">
+    <p class="label">Máy tính</p>
+    <p>1/ Chọn loại công việc</p>
+    <el-radio v-model="typeJob" value="1" label="1">Joint sealing</el-radio>
+    <br>
+    <el-radio v-model="typeJob" value="2" label="2">Device SMDS</el-radio>
+    <br>
+    <el-radio v-model="typeJob" value="3" label="3">Protection and restoration of the coating</el-radio>
+    <p>2/ Thiết lập bộ lọc</p>
+  <p>Chọn loại chất</p>
+    <el-input value="Bê tông xi măng"></el-input>
+  <p>Chọn vật liệu để xử lý bề mặt</p>
+    <el-input value="Thấm nước"></el-input>
+    <el-row :gutter="0">
+      <el-col :sm="12">
+        <el-radio v-model="typeJob2" value="1" label="1">Tiêu thụ trung bình</el-radio>
+      </el-col>
+      <el-col :sm="12">
+        <el-radio v-model="typeJob2" value="2" label="2">Thay đổi thủ công</el-radio>
+      </el-col>
+      <el-col :sm="24" style="margin-top: 10px">
+        <el-input :value="0.2"></el-input>
+      </el-col>
+    </el-row>
+    <p>3/ Nhập dữ liệu diện tích bề mặt được xử lý <br> (m<sup>2</sup>)</p>
+    <el-input value=""></el-input>
+    <el-row :gutter="0" style="margin-top: 20px; text-align: center">
+      <el-col :sm="24">
+        <el-button type="info" plain>Tính</el-button>
+      </el-col>
+    </el-row>
+  </div>
+  <div class="cal5 cal">
+    <p class="label">Máy tính</p>
+    <p>Kết quả tính toán</p>
+    <p>Vùng khí hậu đường bộ</p>
+    <el-input v-model="localSelected"></el-input>
+    <p>Chọn một chất bịt kín</p>
+    <el-input :value="getMaterial()"></el-input>
+    <div class="table">
+      <table cellspacing="0">
+        <tr>
+          <td></td>
+          <td>Đường 1</td>
+          <td>Đường 2</td>
+          <td>Tổng</td>
+        </tr>
+        <tr>
+          <td>Khối lượng đá nghiền, 10-20, kg</td>
+          <td>0.4</td>
+          <td>0.4</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Khối lượng đá nghiền, 5-10, kg</td>
+          <td>36</td>
+          <td>36</td>
+          <td>72</td>
+        </tr>
+        <tr>
+          <td>Khối lượng đá nghiền, 3-5, kg</td>
+          <td>0.6</td>
+          <td>0.6</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Khối lượng của sơn lót, kg </td>
+          <td>0.02</td>
+          <td>0.02</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Khối lượng mastic, kg</td>
+          <td>0.53</td>
+          <td>0.53</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+    <el-row :gutter="0" style="padding-top: 20px">
+      <el-col :sm="12" style="text-align: center;">
+        <el-button type="primary" plain>Thay đổi</el-button>
+      </el-col>
+      <el-col :sm="12" style="text-align: center">
+        <el-button type="primary" plain >Tính toán</el-button>
+      </el-col>
+    </el-row>
+  </div>
 </div>
 </template>
 
