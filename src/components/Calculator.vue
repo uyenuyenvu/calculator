@@ -129,7 +129,7 @@
         </el-col>
       </el-row>
       <p>3/ Nhập dữ liệu diện tích bề mặt được xử lý <br>(m<sup>2</sup>)</p>
-      <el-input value=""></el-input>
+      <el-input v-model="inputCal3"></el-input>
 
       <el-row :gutter="0" style="margin-top: 20px; text-align: center">
         <el-col :sm="24">
@@ -406,7 +406,8 @@ export default {
       s2: 0,
       s3: 0,
       s4: 0,
-      s5: 0
+      s5: 0,
+      inputCal3: ''
     }
   },
 
@@ -468,13 +469,13 @@ export default {
         let value3 = 0.25 * (parseFloat(item.l) * parseFloat(item.b) + 2 * parseFloat(item.l) * parseFloat(item.h))
         t3 += value3
         rounds[index].t1 = value1;
-        rounds[index].t2 = parseInt(value2 * 10000) / 10000;
-        rounds[index].t3 = parseInt(value3 * 10000) / 10000;
+        rounds[index].t2 = parseInt(value2 * 1000) / 1000;
+        rounds[index].t3 = parseInt(value3 *1000) / 1000;
       })
       this.rounds = rounds
       this.t1 = t1
-      this.t2 = parseInt(t2 * 10000) / 10000
-      this.t3 = parseInt(t3 * 10000) / 10000
+      this.t2 = t2 > parseInt(t2) ? parseInt(t2)+1 : t2
+      this.t3 = t3 > parseInt(t3) ? parseInt(t3)+1 : t3
     },
     submit2() {
       let round2 = []
